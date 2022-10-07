@@ -1,0 +1,44 @@
+.send{
+    margin-left: auto;
+    &__titel{
+        margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+    }
+    &__form{
+        display: flex;
+    }
+  }
+.send__input{
+    display: block;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    color: var(--link-footer-cl);
+    font-size: 16px;
+    line-height: 1.25;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color var(--anim-time) var(--animation-timing-function);
+    &:hover, &:focus{
+        border: 1px solid var(--blue-color);
+    }
+}
+.send__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+}
+.send__icon{
+    fill: currentColor;
+}

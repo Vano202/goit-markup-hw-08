@@ -1,0 +1,29 @@
+//General
+@import'./utils/colors';
+@import'./base/reset';
+@import'./utils/vis-hiden';
+@import'./base/general-styles';
+//Components
+@import'./components/logo';
+@import'./components/social';
+@import'./components/button';
+@import'./components/modal';
+@import'./components/form';
+//Header
+@import'./layout/header/header';
+@import'./layout/header/nav';
+@import'./layout/header/contact';
+//Footer
+@import'./layout/footer/footer';
+@import'./layout/footer/address';
+@import'./layout/footer/social-footer';
+@import'./layout/footer/form-footer';
+//Page general
+@import'./pages/general-page/hero';
+@import'./pages/general-page/skills';
+@import'./pages/general-page/activity';
+@import'./pages/general-page/teams';
+@import'./pages/general-page/customers';
+//Page port
+@import'./pages/portfolio/filter';
+@import'./pages/portfolio/card-set';

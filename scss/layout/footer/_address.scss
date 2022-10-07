@@ -1,0 +1,18 @@
+.address {
+    margin-top: 20px;
+    font-style: normal;
+    &__item:not(:last-child){
+        margin-bottom: 9px;
+    }
+  }
+  .address__link {
+    line-height: 1.71;
+    color: var(--white-color);
+    transition: color var(--anim-time) var(--animation-timing-function);
+    &:hover, &:focus{
+        color: var(--blue-color);
+    }
+}
+.address__link--color{
+    color: var(--grey-color);
+}

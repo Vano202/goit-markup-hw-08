@@ -1,0 +1,24 @@
+.customers__list {
+    display: flex;
+    gap: 30px;
+}
+.customers__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: var(--cl-icon);
+    border: 1px solid var(--cl-icon);
+    border-radius: 4px;
+    transition: color var(--anim-time) var(--animation-timing-function), 
+    border var(--anim-time) var(--animation-timing-function);
+    &:hover, &:focus{
+        color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+    }
+}
+.customers__icon {
+    fill: currentColor;
+}
+  

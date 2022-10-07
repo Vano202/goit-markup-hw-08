@@ -1,0 +1,24 @@
+.hero {
+    background-color: var(--backgfoot-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img-backg.jpg);
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &__titel{
+        height: 120px;
+        width: 696px;
+        margin: auto;
+        margin-bottom: 20px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        color: var(--background-color);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+}

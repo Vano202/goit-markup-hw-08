@@ -1,0 +1,25 @@
+.activity {
+    padding-top: 0;
+}
+.activity__list {
+    display: flex;
+    justify-content: space-between;
+}
+.activity__item{
+    position: relative;
+}
+.activity__label{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-label);
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
