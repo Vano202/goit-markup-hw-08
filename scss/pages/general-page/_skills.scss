@@ -2,6 +2,23 @@
     display: flex;
     margin: 0;
     gap: 30px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 1199px){
+    flex-wrap: wrap;
+    }   
+}
+.skills__item{
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+        }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px) / 4);
+        }
 }
 .skills__icon {
     display: flex;
@@ -21,6 +38,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 .skills__text {
     line-height: 1.71;

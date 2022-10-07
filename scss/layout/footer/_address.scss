@@ -4,6 +4,11 @@
     &__item:not(:last-child){
         margin-bottom: 9px;
     }
+    &__group{
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-left: 61px;
+        }
+    }  
   }
   .address__link {
     line-height: 1.71;

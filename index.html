@@ -12,6 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--MODERN-NORMALIZE-->
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <!--styles-->
@@ -20,14 +27,56 @@
   <body class="body">
     <header class="header">
       <div class="container header-container">
-        <nav class="nav">
-          <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
-          <ul class="nav__list">
-            <li class="nav__item"><a href="./index.html" class="nav__link nav__link--curent">Студія</a></li>
-            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
-          </ul>
-        </nav>
+        <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
+          <div class="menu js-menu-container">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="./index.html" class="nav__link nav__link--curent">Студія</a></li>
+                <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+              </ul>
+            </nav>
+            <div class="contacts">
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+              <a class="contact__link" href="tel:+380961111111">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </div>
+            <ul class="menu__social">
+              <li class="menu__social-item">
+                <a class="menu__social-link" href="">Instagram</a>
+              </li>
+              <li class="menu__social-item">
+                <a class="menu__social-link" href="">Twitter</a>
+              </li>
+              <li class="menu__social-item">
+                <a class="menu__social-link" href="">Facebook</a>
+              </li>
+              <li class="menu__social-item">
+                <a class="menu__social-link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          <button class="menu__button js-open-menu" type="button" 
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          >
+            <svg class="menu_icon" width="24" height="19">
+              <use class="menu__icon-burger" href="./images/icons.svg#burger"></use>
+              <use class="menu__icon-x" href="./images/icons.svg#x"></use>
+            </svg>
+          </button>
+        </div>
+          </div>
+        
         <div class="contacts">
           <a href="mailto:info@devstudio.com" class="contact__link"><svg class="contact__icon" width="16" height="12"></svg>
             <use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com </a>
@@ -98,7 +147,7 @@
             <li class="activity__item">
               <img
                 class="activity__img"
-                src="./images/box-1.jpg"
+                src="./images/studio/box-1.jpg"
                 alt="Алгоритмізуємо та програмуємо"
                 width="370"
                 height="294"
@@ -108,7 +157,7 @@
             <li class="activity__item">
               <img
                 class="activity__img"
-                src="./images/box-2.jpg"
+                src="./images/studio/box-2.jpg"
                 alt="Mobile додатки"
                 width="370"
                 height="294"
@@ -118,7 +167,7 @@
             <li class="activity__item">
               <img
                 class="activity__img"
-                src="./images/box-3.jpg"
+                src="./images/studio/box-3.jpg"
                 alt="Підбір графіки"
                 width="370"
                 height="294"
@@ -137,7 +186,7 @@
             <li class="team__item"
               ><img
                 class="team__img"
-                src="./images/img.jpg"
+                src="./images/studio/img.jpg"
                 alt="Товариш по команді"
                 width="270"
                 height="260"
@@ -165,7 +214,7 @@
             <li class="team__item"
               ><img
                 class="team__img"
-                src="./images/img-1.jpg"
+                src="./images/studio/img-1.jpg"
                 alt="Товариш по команді"
                 width="270"
                 height="260"
@@ -193,7 +242,7 @@
             <li class="team__item"
               ><img
                 class="team__img"
-                src="./images/img-2.jpg"
+                src="./images/studio/img-2.jpg"
                 alt="Товариш по команді"
                 width="270"
                 height="260"
@@ -221,7 +270,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/img-3.jpg"
+                src="./images/studio/img-3.jpg"
                 alt="Товариш по команді"
                 width="270"
                 height="260"

@@ -1,6 +1,24 @@
 .contacts {
     display: flex;
     margin-left: auto;
+
+    @media screen and (max-width: 767px){
+      flex-direction: column-reverse;
+      margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 768px){
+   gap: 10px;
+   margin-left: auto;
+   flex-direction: column;
+  }
+
+  @media screen and  (min-width: 1200px){
+    flex-direction: row;
+    align-content: center;
+    gap: 30px;
+  }
+
   }
   .contact__link {
     display: flex;
@@ -15,11 +33,49 @@
     &:hover, &:focus{
         color: var(--blue-color);
     }
-    &:nth-child(n + 2) {
-        margin-left: 50px;
+
+    @media screen and (min-width: 380px) and (max-width: 480px){
+    &:first-child{
+      font-size: 24px;
+      }  
+    }
+    @media screen and (max-width: 767px){
+      &:last-child{
+          color: $blue-color;
+          line-height: 1.18;
       }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 379px){
+      &:last-child{
+          font-size: 24px;
+      }
+  }
+
+  @media screen and (min-width: 380px) and (max-width: 767px) {
+      &:last-child{
+          font-size: 34px;
+      }
+  }
+
+  @media screen and (min-width: 768px){
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 12px; 
+  }
+
+  @media screen and (min-width: 1200px){
+      font-size: 14px;
+      line-height: 1.14;
+  }
+
 }
 
 .contact__icon {
-    fill: currentColor;
-  }
+  fill: currentColor;
+  
+  @media screen and (max-width: 767px){
+    display: none;
+}
+}
