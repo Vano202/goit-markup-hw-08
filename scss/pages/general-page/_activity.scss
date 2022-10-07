@@ -1,6 +1,5 @@
-.activity {
-    padding-top: 0;
-    
+
+.activity{
     @media screen and (max-width: 1199px) {
         display: none;
     }
@@ -8,6 +7,7 @@
 .activity__list {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 .activity__item{
     position: relative;

@@ -1,4 +1,4 @@
-.menu {
+.menu{
     z-index: 5;
     @media screen and (max-width: 767px) {
         display: flex;
@@ -9,15 +9,15 @@
         left: 0;
         top: 0;
         padding: 48px 40px;
-        background-color: $white-color;
+        background-color: var(--white-color);
         opacity: 0;
         
         transform: translateX(100%);
 
-        transition: transform $anim-time $animation-timing-function,
-        opacity $anim-time $animation-timing-function;
+        transition: transform var(--anim-time) var(--animation-timing-function),
+        opacity var(--anim-time) var(--animation-timing-function) ;
 
-        &.js-menu-container .is-open{
+        &.js-menu-container.is-open{
             transform: translateX(0);
             opacity: 1;
         }
@@ -67,7 +67,7 @@
     font-size: 11px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    color: $blue-color;
+    color: var(--blue-color);
     
     @media screen and (min-width: 390px) {
         font-size: 14px;
@@ -94,19 +94,19 @@
     height: 40px;
     background-color: transparent;
 
-    color: $black-color;
-    z-index: 10;
+    color: var(--black-color);
+    z-index: 1000;
     }
 }
 
 .menu__icon-burger{
-    fill: currentColor;
+    fill: var(--blue-color);
     display: block;
-    transition: color $anim-time $animation-timing-function;
+    transition: color var(--anim-time) var(--animation-timing-function);
 
     .menu__button:hover &,
     .menu__button:focus &{
-        fill: $blue-color;
+        fill: var(--blue-color);
     }
 
     .js-open-menu.is-open &{
@@ -118,11 +118,11 @@
 .menu__icon-x{
     fill: currentColor;
     display: none;
-    transition: color $anim-time $animation-timing-function;
+    transition: color var(--anim-time) var(--animation-timing-function);
 
     .menu__button:hover &,
     .menu__button:focus &{
-        fill: $blue-color;
+        fill: var(--blue-color);
     }
 
     .js-open-menu.is-open &{

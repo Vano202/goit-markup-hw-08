@@ -1,6 +1,6 @@
 .contacts {
     display: flex;
-    margin-left: auto;
+    gap: 32px;
 
     @media screen and (max-width: 767px){
       flex-direction: column-reverse;
@@ -21,12 +21,9 @@
 
   }
   .contact__link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 32px 0;
     font-weight: 500;
-    line-height: 1.14px;
+    font-size: 18px;
+    line-height: 1.17x;
     letter-spacing: 0.02em;
     color: var(--grey-color);
     transition: color var(--anim-time) var(--animation-timing-function);
@@ -41,7 +38,7 @@
     }
     @media screen and (max-width: 767px){
       &:last-child{
-          color: $blue-color;
+          color: var(--blue-color);
           line-height: 1.18;
       }
   }

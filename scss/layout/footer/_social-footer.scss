@@ -1,5 +1,4 @@
 .social__group {
-    margin-left: 70px;
 
     @media screen and (max-width: 767px){
         margin-top: 60px;
@@ -15,13 +14,9 @@
     }
 }
 .social__titel {
-    text-transform: uppercase;
-      margin: 0;
-      margin-bottom: 20px;
-      font-style: normal;
       font-weight: 700;
-      line-height: 16px;
-      letter-spacing: 0.03em;
+      line-height: 1.14;
+      
       text-transform: uppercase;
     color: var(--white-color);
 }
