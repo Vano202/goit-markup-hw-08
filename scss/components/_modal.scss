@@ -27,6 +27,11 @@
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--anim-time) var(--animation-timing-function);
+
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
+        max-height: 581px;
+    }
 }
 .modal__btn-x{
     position: absolute;

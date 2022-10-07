@@ -9,6 +9,11 @@
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+          
+      }
   }
   .form__field{
     position: relative;
@@ -121,6 +126,11 @@
     line-height: 1.71;
     color: var(--grey-color);
     user-select: none;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+      }
 }
 .form__policy-link{
     color: var(--blue-color);
