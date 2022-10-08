@@ -8,7 +8,10 @@
         position: fixed;
         left: 0;
         top: 0;
-        padding: 48px 40px;
+        padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
         background-color: var(--white-color);
         opacity: 0;
         
