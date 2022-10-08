@@ -4,13 +4,13 @@
     padding: 118px 0;
     margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/studio/img-backg.jpg);
+      url('../images/studio/hero/hero-mobi.jpg');
    
       @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: 
-      linear-gradient(to right, var(--background-hero), var(--background-hero)),url('../images');
+      linear-gradient(to right, var(--background-hero), var(--background-hero)),url('../images/studio/hero/hero-mobi@2x.jpg');
       }
       background-repeat: no-repeat;
       background-position: center;
@@ -22,7 +22,7 @@
           background-image: linear-gradient(to right, 
           var(--background-hero), 
           var(--background-hero)), 
-          url('../');
+          url('../images/studio/hero/hero-tab.jpg');
           
           @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
@@ -30,7 +30,7 @@
           background-image: 
           linear-gradient(to right, 
           var(--background-hero)o, 
-          var(--background-hero)),url('..');
+          var(--background-hero)),url('../images/studio/hero/hero-tab@2x.jpg');
           }
       }
   
@@ -38,7 +38,7 @@
           background-image: linear-gradient(to right, 
           var(--background-hero), 
           var(--background-hero)), 
-          url('../images');
+          url('../images/studio/hero/hero-desk.jpg');
           
           @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
@@ -46,7 +46,7 @@
               background-image: 
               linear-gradient(to right, 
               var(--background-hero), 
-          var(--background-hero)),url('../images/');
+          var(--background-hero)),url('../images/studio/hero/hero-desk@2x.jpg');
       }
       
           @media screen and (min-width: 1200px){
@@ -54,20 +54,20 @@
           padding: 200px 0;
           }
 
-    &__titel{
-      margin: 0 auto 30px;
-        height: 120px;
-        max-width: 360px;
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.62;
-        color: var(--white-color);
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-      }
-      @media screen and (min-width: 1200px) {
-        font-size: 44px;
-        line-height: 1.36;
-      }
+  }
+}
+.hero__titel{
+  margin: 0 auto 30px;
+  max-width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #fff;
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }

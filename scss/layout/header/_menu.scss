@@ -98,12 +98,12 @@
     background-color: transparent;
 
     color: var(--black-color);
-    z-index: 1000;
+    z-index: 10;
     }
 }
 
 .menu__icon-burger{
-    fill: var(--blue-color);
+    fill: var(--black-color);
     display: block;
     transition: color var(--anim-time) var(--animation-timing-function);
 
